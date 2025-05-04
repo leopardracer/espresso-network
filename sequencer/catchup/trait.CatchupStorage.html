@@ -4,21 +4,21 @@
         &amp;self,
         _instance: &amp;NodeState,
         _height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-        _view: ViewNumber,
+        _view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
         _accounts: &amp;[FeeAccount],
     ) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> + <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/future/future/trait.Future.html" title="trait core::future::future::Future">Future</a>&lt;Output = <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;(FeeMerkleTree, Leaf2)&gt;&gt; { ... }
 <span class="item-spacer"></span>    fn <a href="#method.get_reward_accounts" class="fn">get_reward_accounts</a>(
         &amp;self,
         _instance: &amp;NodeState,
         _height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-        _view: ViewNumber,
+        _view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
         _accounts: &amp;[RewardAccount],
     ) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> + <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/future/future/trait.Future.html" title="trait core::future::future::Future">Future</a>&lt;Output = <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;(RewardMerkleTree, Leaf2)&gt;&gt; { ... }
 <span class="item-spacer"></span>    fn <a href="#method.get_frontier" class="fn">get_frontier</a>(
         &amp;self,
         _instance: &amp;NodeState,
         _height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-        _view: ViewNumber,
+        _view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
     ) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> + <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/future/future/trait.Future.html" title="trait core::future::future::Future">Future</a>&lt;Output = <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;<a class="type" href="../api/type.BlocksFrontier.html" title="type sequencer::api::BlocksFrontier">BlocksFrontier</a>&gt;&gt; { ... }
 <span class="item-spacer"></span>    fn <a href="#method.get_chain_config" class="fn">get_chain_config</a>(
         &amp;self,
@@ -32,7 +32,7 @@
     &amp;self,
     _instance: &amp;NodeState,
     _height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    _view: ViewNumber,
+    _view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
     _accounts: &amp;[FeeAccount],
 ) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> + <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/future/future/trait.Future.html" title="trait core::future::future::Future">Future</a>&lt;Output = <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;(FeeMerkleTree, Leaf2)&gt;&gt;</h4></section></summary><div class="docblock"><p>Get the state of the requested <code>accounts</code>.</p>
 <p>The state is fetched from a snapshot at the given height and view, which <em>must</em> correspond!
@@ -46,13 +46,13 @@ the state from memory rather than storage.</p>
     &amp;self,
     _instance: &amp;NodeState,
     _height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    _view: ViewNumber,
+    _view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
     _accounts: &amp;[RewardAccount],
 ) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> + <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/future/future/trait.Future.html" title="trait core::future::future::Future">Future</a>&lt;Output = <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;(RewardMerkleTree, Leaf2)&gt;&gt;</h4></section><details class="toggle method-toggle" open><summary><section id="method.get_frontier" class="method"><a class="src rightside" href="../../src/sequencer/catchup.rs.html#443-456">Source</a><h4 class="code-header">fn <a href="#method.get_frontier" class="fn">get_frontier</a>(
     &amp;self,
     _instance: &amp;NodeState,
     _height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    _view: ViewNumber,
+    _view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
 ) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> + <a class="trait" href="https://doc.rust-lang.org/1.86.0/core/future/future/trait.Future.html" title="trait core::future::future::Future">Future</a>&lt;Output = <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;<a class="type" href="../api/type.BlocksFrontier.html" title="type sequencer::api::BlocksFrontier">BlocksFrontier</a>&gt;&gt;</h4></section></summary><div class="docblock"><p>Get the blocks Merkle tree frontier.</p>
 <p>The state is fetched from a snapshot at the given height and view, which <em>must</em> correspond!
 <code>height</code> is provided to simplify lookups for backends where data is not indexed by view.
@@ -68,19 +68,19 @@ decided view.</p>
     &amp;self,
     instance: &amp;NodeState,
     height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    view: ViewNumber,
+    view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
     accounts: &amp;[RewardAccount],
 ) -&gt; <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;(RewardMerkleTree, Leaf2)&gt;</h4></section><section id="method.get_accounts-1" class="method trait-impl"><a class="src rightside" href="../../src/sequencer/api/sql.rs.html#126-156">Source</a><a href="#method.get_accounts-1" class="anchor">§</a><h4 class="code-header">async fn <a href="#method.get_accounts" class="fn">get_accounts</a>(
     &amp;self,
     instance: &amp;NodeState,
     height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    view: ViewNumber,
+    view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
     accounts: &amp;[FeeAccount],
 ) -&gt; <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;(FeeMerkleTree, Leaf2)&gt;</h4></section><section id="method.get_frontier-1" class="method trait-impl"><a class="src rightside" href="../../src/sequencer/api/sql.rs.html#158-192">Source</a><a href="#method.get_frontier-1" class="anchor">§</a><h4 class="code-header">async fn <a href="#method.get_frontier" class="fn">get_frontier</a>(
     &amp;self,
     instance: &amp;NodeState,
     height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    view: ViewNumber,
+    view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
 ) -&gt; <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;<a class="type" href="../api/type.BlocksFrontier.html" title="type sequencer::api::BlocksFrontier">BlocksFrontier</a>&gt;</h4></section><section id="method.get_chain_config-1" class="method trait-impl"><a class="src rightside" href="../../src/sequencer/api/sql.rs.html#194-202">Source</a><a href="#method.get_chain_config-1" class="anchor">§</a><h4 class="code-header">async fn <a href="#method.get_chain_config" class="fn">get_chain_config</a>(
     &amp;self,
     commitment: Commitment&lt;ChainConfig&gt;,
@@ -90,19 +90,19 @@ decided view.</p>
     &amp;self,
     instance: &amp;NodeState,
     height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    view: ViewNumber,
+    view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
     accounts: &amp;[FeeAccount],
 ) -&gt; <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;(FeeMerkleTree, Leaf2)&gt;</h4></section><section id="method.get_reward_accounts-2" class="method trait-impl"><a class="src rightside" href="../../src/sequencer/catchup.rs.html#496-506">Source</a><a href="#method.get_reward_accounts-2" class="anchor">§</a><h4 class="code-header">async fn <a href="#method.get_reward_accounts" class="fn">get_reward_accounts</a>(
     &amp;self,
     instance: &amp;NodeState,
     height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    view: ViewNumber,
+    view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
     accounts: &amp;[RewardAccount],
 ) -&gt; <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;(RewardMerkleTree, Leaf2)&gt;</h4></section><section id="method.get_frontier-2" class="method trait-impl"><a class="src rightside" href="../../src/sequencer/catchup.rs.html#508-515">Source</a><a href="#method.get_frontier-2" class="anchor">§</a><h4 class="code-header">async fn <a href="#method.get_frontier" class="fn">get_frontier</a>(
     &amp;self,
     instance: &amp;NodeState,
     height: <a class="primitive" href="https://doc.rust-lang.org/1.86.0/std/primitive.u64.html">u64</a>,
-    view: ViewNumber,
+    view: <a class="struct" href="../../hotshot_types/data/struct.ViewNumber.html" title="struct hotshot_types::data::ViewNumber">ViewNumber</a>,
 ) -&gt; <a class="type" href="https://docs.rs/anyhow/1.0.97/anyhow/type.Result.html" title="type anyhow::Result">Result</a>&lt;<a class="type" href="../api/type.BlocksFrontier.html" title="type sequencer::api::BlocksFrontier">BlocksFrontier</a>&gt;</h4></section><section id="method.get_chain_config-2" class="method trait-impl"><a class="src rightside" href="../../src/sequencer/catchup.rs.html#517-522">Source</a><a href="#method.get_chain_config-2" class="anchor">§</a><h4 class="code-header">async fn <a href="#method.get_chain_config" class="fn">get_chain_config</a>(
     &amp;self,
     commitment: Commitment&lt;ChainConfig&gt;,
